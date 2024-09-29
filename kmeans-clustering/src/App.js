@@ -82,7 +82,7 @@ function App() {
   }, [method]);
 
   return (
-    <div>
+    <div className="App">
       <h1>KMeans Clustering Algorithm</h1>
       <KMeansControl
         init={init}

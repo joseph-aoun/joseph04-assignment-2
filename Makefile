@@ -1,8 +1,20 @@
+ifeq ($(OS),Windows_NT)
+    ACTIVATE = call venv\Scripts\activate.bat
+    PYTHON = python
+    BACKEND_RUN = start /B python backend.py
+else
+    ACTIVATE = source venv/bin/activate
+    PYTHON = python3
+    BACKEND_RUN = $(PYTHON) backend.py &
+endif
+
 install:
-	python3 -m venv venv
-	. venv/bin/activate && pip install -r requirements.txt
+	$(PYTHON) -m venv venv
+	$(ACTIVATE) && pip install -r requirements.txt
 	cd kmeans-clustering && npm install
 
 run:
-	. venv/bin/activate && python3 backend.py &
+	$(ACTIVATE) && $(BACKEND_RUN)
 	cd kmeans-clustering && npm start
+
+.PHONY: install run
