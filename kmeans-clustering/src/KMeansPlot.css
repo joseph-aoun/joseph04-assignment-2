@@ -1,0 +1,11 @@
+.plot-container {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plot-container .js-plotly-plot {
+    margin: 0 auto;
+}

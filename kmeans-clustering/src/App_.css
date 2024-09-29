@@ -1,0 +1,17 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #35495e;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  

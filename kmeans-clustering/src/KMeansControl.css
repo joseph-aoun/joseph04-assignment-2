@@ -1,0 +1,50 @@
+
+.control-panel {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .control-panel .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .control-panel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .control-panel input[type="number"],
+  .control-panel select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .centroid-counter {
+    font-weight: bold;
+    color: #35495e;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #42b983;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .button-group button:hover {
+    background-color: #369f6e;
+  }
+  
